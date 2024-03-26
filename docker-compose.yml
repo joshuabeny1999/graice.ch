@@ -1,0 +1,19 @@
+version: '3'
+services:
+    apache:
+        container_name: website_joshua_graice_ch
+        image: httpd:latest
+        restart: always
+        expose:
+            - 80
+        volumes:
+            - ./htdocs/:/usr/local/apache2/htdocs/
+        environment:
+           VIRTUAL_HOST: www.graice.ch, graice.ch
+           LETSENCRYPT_HOST: www.graice.ch, graice.ch
+           LETSENCRYPT_EMAIL: joshua@joshuah.ch
+networks:
+    default:
+        external: true
+        name: nginx-proxy
+
