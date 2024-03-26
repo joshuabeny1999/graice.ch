@@ -52,6 +52,39 @@
 		</nav>
 	</header>
 
+	<script>
+		window.onload = function () {
+			// Starten Sie die Animation, wenn das Dokument vollständig geladen ist
+			document.getElementById('upcoming-releases').style.opacity = '1';
+
+			// Fügen Sie einen Event-Listener für das Scroll-Event hinzu
+			window.addEventListener('scroll', function () {
+				// Blenden Sie das Element aus, wenn der Benutzer scrollt
+				if (window.scrollY > 0) {
+					document.getElementById('upcoming-releases').style.display = 'none';
+				} else {
+					document.getElementById('upcoming-releases').style.display = 'block';
+				}
+			});
+		};
+	</script>
+
+	<div id="upcoming-releases" class="fade-in" style="opacity: 0;">
+		<h2>Kommende Veröffentlichungen</h2>
+		<div class="release">
+			<img src="images/covers/Ostere-Cover.png" alt="Album Cover">
+			<p><strong>Album Ostere</strong> - 29.03.2024</p>
+			<a target="_blank" href="https://distrokid.com/hyperfollow/graice/ostere" class="spotify-presave">Spotify
+				Presave <i class="fab fa-spotify"></i></a>
+		</div>
+		<div class="release">
+			<img src="images/covers/Rising from the dead-Cover.png" alt="Single Cover">
+			<p><strong>Single - Rising from the dead</strong> - 31.03.2024</p>
+			<a target="_blank" href="https://distrokid.com/hyperfollow/graice/rising-from-the-dead"
+				class="spotify-presave">Spotify
+				Presave <i class="fab fa-spotify"></i></a>
+		</div>
+	</div>
 	<!-- Intro -->
 	<section id="intro" class="main style1 dark fullscreen">
 		<div class="content">
@@ -122,7 +155,7 @@
 					zum Leben zu erwecken. Mit innovativen AI-Algorithmen entstehen melodische Kompositionen, die die
 					Botschaft meiner Texte auf einzigartige Weise vermitteln.</p>
 
-				<p>Der Name grAIce symbolisiert diese Verbindung zwischen Gnade und Künstlicher Intelligenz. Es ist
+				<p>Der Name grAIce symbolisiert diese Verbindung zwischen Gnade und künstlicher Intelligenz (AI). Es ist
 					meine Vision, durch meine Musik Menschen zu berühren, Hoffnung zu schenken und die Gegenwart Gottes
 					spürbar zu machen.</p>
 
@@ -137,13 +170,15 @@
 
 		<!-- Icons -->
 		<ul class="icons">
-			<li><a href="https://music.apple.com/ch/artist/graice/1737713302?itsct=music_box_link&itscg=30200&ls=1&app=music"
+			<li><a target="_blank"
+					href="https://music.apple.com/ch/artist/graice/1737713302?itsct=music_box_link&itscg=30200&ls=1&app=music"
 					class="icon brands fa-apple"><span class="label">Apple Music</span></a></li>
-			<li><a href="https://open.spotify.com/intl-de/artist/6z42y9ZXSbKIwNPagnXExt?si=8nL0gdulQmyLGJPExS9OwA"
+			<li><a target="_blank"
+					href="https://open.spotify.com/intl-de/artist/6z42y9ZXSbKIwNPagnXExt?si=8nL0gdulQmyLGJPExS9OwA"
 					class="icon brands fa-spotify"><span class="label">Spotify</span></a>
 			</li>
-			<li><a href="#" class="icon brands fa-instagram"><span class="label">Tidal</span></a></li>
-			<li><a href="https://music.youtube.com/channel/UCW1rdMX0v0dl-K-QkLIUHCg"
+			<!--<li><a target="_blank" href="#" class="icon brands fa-instagram"><span class="label">Tidal</span></a></li>-->
+			<li><a target="_blank" href="https://music.youtube.com/channel/UCW1rdMX0v0dl-K-QkLIUHCg"
 					class="icon brands fa-youtube"><span class="label">Youtube Music</span></a></li>
 		</ul>
 
