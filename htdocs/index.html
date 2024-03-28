@@ -55,7 +55,7 @@
 	<script>
 		window.onload = function () {
 			// Starten Sie die Animation, wenn das Dokument vollständig geladen ist
-			document.getElementById('upcoming-releases').style.opacity = '1';
+			document.getElementById('upcoming-releases').style.display = 'block';
 
 			// Fügen Sie einen Event-Listener für das Scroll-Event hinzu
 			window.addEventListener('scroll', function () {
@@ -69,7 +69,7 @@
 		};
 	</script>
 
-	<div id="upcoming-releases" class="fade-in" style="opacity: 0;">
+	<div id="upcoming-releases" class="fade-in" style="display: none; opacity: 0;">
 		<h2>Kommende Veröffentlichungen</h2>
 		<div class="release">
 			<img src="images/covers/Ostere-Cover.png" alt="Album Cover">

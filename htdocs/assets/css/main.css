@@ -2333,8 +2333,8 @@ input, select, textarea {
 }
 
 .release img {
-	width: 100px;
-	height: 100px;
+	width: 65px;
+	height: px;
 }
 
 .release p {
@@ -2354,42 +2354,47 @@ input, select, textarea {
 }
 
 .spotify-presave img {
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	vertical-align: middle;
 	margin-left: 10px;
 }
 
 .fade-in {
-	animation: fadeIn ease 3s;
-	-webkit-animation: fadeIn ease 3s;
-	-moz-animation: fadeIn ease 3s;
-	-o-animation: fadeIn ease 3s;
-	-ms-animation: fadeIn ease 3s;
+	animation: fadeIn ease 4s;
+	-webkit-animation: fadeIn ease 4s;
+	-moz-animation: fadeIn ease 4s;
+	-o-animation: fadeIn ease 4s;
+	-ms-animation: fadeIn ease 4s;
 	animation-fill-mode: forwards; // Die Animation behält ihren Endzustand bei
 }
 
 @keyframes fadeIn {
 	0% {opacity:0;}
+	25% {opacity:0;}
 	100% {opacity:1;}
 }
 
 @-moz-keyframes fadeIn {
 	0% {opacity:0;}
+	25% {opacity:0;}
 	100% {opacity:1;}
 }
 
 @-webkit-keyframes fadeIn {
 	0% {opacity:0;}
+	25% {opacity:0;}
 	100% {opacity:1;}
 }
 
 @-o-keyframes fadeIn {
 	0% {opacity:0;}
+	25% {opacity:0;}
 	100% {opacity:1;}
 }
 
 @-ms-keyframes fadeIn {
 	0% {opacity:0;}
+	25% {opacity:0;}
 	100% {opacity:1;}
 }
